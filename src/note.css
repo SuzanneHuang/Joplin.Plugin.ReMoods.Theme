@@ -11,16 +11,16 @@
   - Print: Print & Export PDF.
 
   - This is the first load template for each time starting ReMoods, and
-  this template is based on dusk mode. 
+  this template is based on dusk mode.
 
-  - This document is 100% the same as "userstyle.css". So, you can 
-  directly test it with the in-app development tools, customize it and 
+  - This document is 100% the same as "userstyle.css". So, you can
+  directly test it with the in-app development tools, customize it and
   develop your own CSS theme.
 
   - :not(#fake) / :not(.fake) are use for increasing the CSS specificity.
 
-  - Some element styles have only been adjusted for the export PDF, they 
-  are in the code section of "PRINT STYLES ADJUSTMENTS" and "PRINT COLOR 
+  - Some element styles have only been adjusted for the export PDF, they
+  are in the code section of "PRINT STYLES ADJUSTMENTS" and "PRINT COLOR
   ADJUSTMENTS".
 
   #CODE STRUCTURE OVERVIEW:
@@ -142,7 +142,7 @@
   --usp-base-font: var(--usp-custom-base-font), "Mulish", "Montserrat", "GenSenRounded TW", "Chiron Hei HK ExtraLight", Avenir, Arial;
   --usp-monospace-font: var(--usp-custom-monospace-font), "Cascadia Mono Light", "GenSenRounded TW", "Chiron Hei HK ExtraLight", Roboto;
   --usp-heading-font: var(--usp-custom-heading-font), "Montserrat", "Mulish", "GenSenRounded TW", "Chiron Hei HK", Avenir, Arial;
-  
+
   /* SCREEN: SIZES ========================================= */
   --usp-base-font-size: 15px;
   --usp-monospace-font-size: 14px;
@@ -172,7 +172,7 @@
   --usp-mermaid-eye-protector-transition: filter 1.2s;
   --usp-image-eye-protector-filter: brightness(80%);
   --usp-image-eye-protector-transition: filter 1.2s;
-  
+
   /* SCREEN: DISPLAY ======================================= */
   --usp-heading-ref-display: inline-block;
   --usp-h1-border-display: block;
@@ -186,7 +186,7 @@
   --usp-custom-title-block-symbol-display: inline-block;
   --usp-toc-btn-display: block;
 
-  
+
   /* || USER SETTING PROPERTIES 2 | PRINT ****************** */
   /* PRINT: FONT =========================================== */
   --usp-print-custom-base-font: none;
@@ -195,7 +195,7 @@
   --usp-print-base-font: var(--usp-print-custom-base-font), "Mulish", "Montserrat", "GenSenRounded TW", "Chiron Hei HK Light", Avenir, Arial;
   --usp-print-monospace-font: var(--usp-print-custom-monospace-font), "Cascadia Mono Light", "GenSenRounded TW", "Chiron Hei HK Light", Roboto;
   --usp-print-heading-font: var(--usp-print-custom-heading-font), "Montserrat", "Mulish", "GenSenRounded TW", "Chiron Hei HK", Avenir, Arial;
-  
+
   /* PRINT: SIZES ========================================== */
   --usp-print-base-font-size: 13px;
   --usp-print-monospace-font-size: 10px;
@@ -218,9 +218,9 @@
   --usp-print-link-href-display: inline;
   --usp-print-abbreviation-text-description-display: inline;
   --usp-print-sticky-notes-key-mention-display: block;
-  
 
-  
+
+
 
 
   /* ---------------------------------------------------------------------------------------- */
@@ -241,22 +241,22 @@
                                                           hsl(var(--usp-hue), 100%,  80%),
                                                           hsl(var(--usp-hue), 100%,  35%,  50%),
                                                           hsl(var(--usp-hue), 100%,  80%)  3px);
-  
+
   --sc-block-content-scrollbar-thumb-bd:                  transparent;
   --sc-block-content-scrollbar-thumb-bg:                  radial-gradient(
                                                           hsl(var(--usp-hue),  30%,  60%)  30%,
                                                           hsl(var(--usp-hue),  40%,  70%)  70%);
   --sc-block-content-scrollbar-thumb-bg-hover:            radial-gradient(
-                                                          hsl(var(--usp-hue),  50%,  60%)  30%, 
+                                                          hsl(var(--usp-hue),  50%,  60%)  30%,
                                                           hsl(var(--usp-hue),  60%,  70%)  70%);
 
   /* SPECIAL TEXT =========================================================================== */
   --sc-special-text-ts:                                   none;
-  
+
   --sc-strong-text:                                       hsl(var(--usp-hue), 100%,  70%);
-  
+
   --sc-emphasize-text:                                    var(--sc-strong-text);
-  
+
   --sc-insert-text:                                       hsl(var(--usp-hue), 100%,  70%);
   --sc-insert-bg:                                         none;
   --sc-insert-bdb:                                        hsl(var(--usp-hue),  25%,  60%);
@@ -282,22 +282,22 @@
   --sc-inline-code-text:                                  hsl(var(--usp-hue), 100%,  85%);
   --sc-inline-code-bg:                                    hsl(var(--usp-hue),  30%,  25%);
   --sc-inline-code-symbol:                                hsl(var(--usp-hue),  23%,  46%);
-  
+
   /* LINK =================================================================================== */
   --sc-link-text:                                         hsl(var(--usp-hue), 100%,  85%);
   --sc-link-source-icon:                                  hsl(var(--usp-hue), 100%,  85%);
 
   /* LIST =================================================================================== */
   --sc-list-token:                                        hsl(calc(var(--usp-hue) + 180deg),  80%,  80%);
-  --sc-list-text:                                         hsl(var(--usp-hue),  30%,  80%);
+  /* --sc-list-text:                                         hsl(var(--usp-hue),  30%,  80%); */
   --sc-list-span:                                         var(--sc-text);
 
   /* FOOTNOTE =============================================================================== */
   --sc-footnote-ref:                                      hsl(calc(var(--usp-hue) + 180deg), 100%,  85%);
-  
+
   --sc-footnote-title:                                    hsl(var(--usp-hue),   0%,  70%);
   --sc-footnote-title-bdt:                     3px double hsl(var(--usp-hue),   0%,  70%);
-  
+
   --sc-footnote-list-text:                                hsl(var(--usp-hue),   0%,  70%);
   --sc-footnote-list-token:                               hsl(var(--usp-hue),   0%,  50%);
 
@@ -323,7 +323,7 @@
   --sc-h4-bgi:                                            var(--sc-h2-bgi);
   /* h5 ------------------------------------------------------------------------------------- */
   --sc-h5-text:                                           hsl(var(--usp-hue),  30%,  80%);
-  --sc-h5-bgi:                                            linear-gradient(to right, 
+  --sc-h5-bgi:                                            linear-gradient(to right,
                                                           transparent 50%,
                                                           var(--sc-bg-1) 100%),
                                                           repeating-linear-gradient(to right,
@@ -346,24 +346,24 @@
   --sc-table-bd:                                2px solid var(--sc-bg-1);
 
   --sc-table-header-bg:                                   hsl(var(--usp-hue),  80%,  40%);
-  --sc-table-header-ts:                             2px black; 
-  
+  --sc-table-header-ts:                             2px black;
+
   --sc-table-row-odd-bg:                                  hsl(var(--usp-hue),  15%,  30%);
   --sc-table-row-even-bg:                                 hsl(var(--usp-hue),  10%,  35%);
-  
+
   /* MARKDOWN TOC =========================================================================== */
   --sc-toc-bg:                                            var(--sc-bg-2);
   --sc-toc-bs:                                    0 0 5px hsl(var(--usp-hue), 100%,  40%);
-  
+
   --sc-toc-btn-text:                                      hsl(var(--usp-hue),   0%, 100%);
   --sc-toc-btn-bgc:                                       hsl(var(--usp-hue), 100%,  75%);
   --sc-toc-btn-ts:                                0 0 3px hsl(var(--usp-hue), 100%,  10%);
-  
+
   --sc-toc-list-bdl:                            1px solid hsl(var(--usp-hue),  30%,  30%);
-  
+
   --sc-toc-link-text-hover:                               hsl(var(--usp-hue),   0%, 100%);
   --sc-toc-link-bg-hover:                                 hsl(var(--usp-hue),  25%,  20%);
-  
+
   /* CODE BLOCK ============================================================================= */
   --sc-code-block-bg:                                     var(--sc-bg-2);
   --sc-code-block-bdc:                                    hsl(var(--usp-hue), 100%,  70%);
@@ -377,7 +377,7 @@
 
   --sc-code-block-string-text:                            hsl(calc(var(--usp-hue) + 180deg), 100%,  75%);
   --sc-code-block-string-ts:                              none;
-  
+
   --sc-code-block-params-text:                            hsl(calc(var(--usp-hue) + 300deg), 100%,  70%);
   --sc-code-block-params-ts:                              none;
 
@@ -386,10 +386,10 @@
 
   --sc-code-block-selector-id-text:                       hsl(calc(var(--usp-hue) + 159deg), 100%,  75%);
   --sc-code-block-selector-id-ts:                         none;
-  
+
   --sc-code-block-selector-pseudo-text:                   hsl(calc(var(--usp-hue) + 323deg),  87%,  75%);
   --sc-code-block-selector-pseudo-ts:                     none;
-  
+
   --sc-code-block-selector-attr-text:                     hsl(calc(var(--usp-hue) + 300deg), 100%,  85%);
   --sc-code-block-selector-attr-ts:                       none;
 
@@ -434,21 +434,21 @@
   --sc-code-block-html-attr-ts:                           var(--sc-code-block-title-class-inherited-ts);
   --sc-code-block-type-text:                              var(--sc-code-block-title-class-inherited-text);
   --sc-code-block-type-ts:                                var(--sc-code-block-title-class-inherited-ts);
-  
+
   --sc-code-block-literal-text:                           hsl(calc(var(--usp-hue) + 148deg), 100%,  65%);
   --sc-code-block-literal-ts:                             none;
   --sc-code-block-meta-text:                              var(--sc-code-block-literal-text);
   --sc-code-block-meta-ts:                                var(--sc-code-block-literal-ts);
   --sc-code-block-symbol-text:                            var(--sc-code-block-literal-text);
   --sc-code-block-symbol-ts:                              var(--sc-code-block-literal-ts);
-  
+
   --sc-code-block-subst-text:                             hsl(calc(var(--usp-hue) +  90deg), 100%,  75%);
   --sc-code-block-subst-ts:                               none;
   --sc-code-block-variable-text:                          var(--sc-code-block-subst-text);
   --sc-code-block-variable-ts:                            var(--sc-code-block-subst-ts);
   --sc-code-block-regexp-text:                            var(--sc-code-block-subst-text);
   --sc-code-block-regexp-ts:                              var(--sc-code-block-subst-ts);
-  
+
   --sc-code-block-selector-tag-text:                      hsl(calc(var(--usp-hue) + 120deg), 100%,  70%);
   --sc-code-block-selector-tag-ts:                        none;
   --sc-code-block-tag-text:                               var(--sc-code-block-selector-tag-text);
@@ -512,10 +512,10 @@
   --sc-plugin-spoiler-bs:                             4px hsl(var(--usp-hue), 100%,  80%);
 
   --sc-plugin-spoiler-title:                              hsl(var(--usp-hue), 100%,  90%);
-  
+
   --sc-plugin-spoiler-span-title:                         hsl(var(--usp-hue),  40%,  80%);
   --sc-plugin-spoiler-span-title-bg:                      hsl(var(--usp-hue),  10%,  30%);
-  
+
   --sc-plugin-spoiler-list-text:                          hsl(var(--usp-hue), 100%,  80%);
   --sc-plugin-spoiler-list-span:                          hsl(var(--usp-hue),   0%,  90%);
 
@@ -540,7 +540,7 @@
 
 
 
-  
+
   /* ---------------------------------------------------------------------------------------- */
   /*                                    PRINT PROPERTIES                                      */
   /* ---------------------------------------------------------------------------------------- */
@@ -551,19 +551,19 @@
   /* PRINT GENERAL ========================================================================== */
   --pr-bg:                                              hsl(  0,   0%, 100%);
   --pr-text:                                            hsl(  0,   0%,  25%);
-  
+
   --pr-hr-bg: ;
   --pr-hr-bgi:                                            repeating-linear-gradient(114deg,
                                                           hsl(var(--usp-hue), 100%,  80%),
                                                           hsl(var(--usp-hue), 100%,  35%,  50%),
                                                           hsl(var(--usp-hue), 100%,  80%)  3px);
-  --pr-note-title:                                      hsl(  0,   0%,  60%); 
+  --pr-note-title:                                      hsl(  0,   0%,  60%);
 
   /* PRINT SPECIAL TEXT ===================================================================== */
   --pr-strong-text:                                       hsl(var(--usp-hue), 100%,  30%);
-  
+
   --pr-emphasize-text:                                    hsl(var(--usp-hue), 100%,  30%);
-  
+
   --pr-insert-text:                                       hsl(var(--usp-hue), 100%,  40%);
   --pr-insert-bg:                                         none;
   --pr-insert-bd:                                         hsl(var(--usp-hue),  25%,  50%);
@@ -591,7 +591,7 @@
   --pr-link-source-icon:                                  hsl(var(--usp-hue),  80%,  50%);
 
   /* PRINT LIST ============================================================================= */
-  --pr-list-text:                                         hsl(var(--usp-hue),  30%,  60%);
+  /* --pr-list-text:                                         hsl(var(--usp-hue),  30%,  60%); */
   --pr-list-span:                                         var(--pr-text);
   --pr-list-token: ;
 
@@ -600,7 +600,7 @@
   --pr-footnote-title-bdt:                     3px double hsl(var(--usp-hue),   0%,  50%);
 
   --pr-footnote-ref:                                      var(--pr-link-text);
-  
+
   --pr-footnote-list-text:                                hsl(var(--usp-hue),   0%,  50%);
   --pr-footnote-list-token:                               hsl(var(--usp-hue),   0%,  50%);
 
@@ -639,12 +639,12 @@
   /* PRINT TABLE ============================================================================ */
   --pr-table-text:                                        hsl(var(--usp-hue),   0%,  25%);
   --pr-table-header-bg:                                   hsl(var(--usp-hue), 100%,  70%);
-  
+
   --pr-table-row-odd-bg:                                  hsl(var(--usp-hue), 100%,  85%);
   --pr-table-row-even-bg:                                 hsl(var(--usp-hue), 100%,  85%);
-  
+
   --pr-table-bd:                              1px solid black;
-  
+
   /* PRINT MARKDOWN TOC ===================================================================== */
   /* print toc button (title) --------------------------------------------------------------- */
   --pr-toc-btn-text:                                      hsl(var(--usp-hue),  30%,  30%);
@@ -659,7 +659,7 @@
   --pr-code-block-number-text:                            hsl(calc(var(--usp-hue) + 110deg), 100%,  26%);
 
   --pr-code-block-string-text:                            hsl(calc(var(--usp-hue) + 180deg), 100%,  35%);
-  
+
   --pr-code-block-params-text:                            hsl(calc(var(--usp-hue) + 300deg), 100%,  30%);
 
   --pr-code-block-title-text:                             hsl(calc(var(--usp-hue) + 180deg), 100%,  45%);
@@ -667,7 +667,7 @@
   --pr-code-block-selector-id-text:                       hsl(calc(var(--usp-hue) + 159deg), 100%,  35%);
 
   --pr-code-block-selector-pseudo-text:                   hsl(calc(var(--usp-hue) + 323deg),  87%,  35%);
-  
+
   --pr-code-block-selector-attr-text:                     hsl(calc(var(--usp-hue) + 300deg), 100%,  45%);
 
   --pr-code-block-text:                                   hsl(var(--usp-hue),   0%,  30%);
@@ -692,18 +692,18 @@
   --pr-code-block-selector-class-text:                    var(--pr-code-block-title-class-inherited-text);
   --pr-code-block-html-attr-text:                         var(--pr-code-block-title-class-inherited-text);
   --pr-code-block-type-text:                              var(--pr-code-block-title-class-inherited-text);
-  
+
   --pr-code-block-literal-text:                           hsl(calc(var(--usp-hue) + 148deg), 100%,  25%);
   --pr-code-block-meta-text:                              var(--pr-code-block-literal-text);
   --pr-code-block-symbol-text:                            var(--pr-code-block-literal-text);
-  
+
   --pr-code-block-subst-text:                             hsl(calc(var(--usp-hue) +  90deg), 100%,  35%);
   --pr-code-block-variable-text:                          var(--pr-code-block-subst-text);
   --pr-code-block-regexp-text:                            var(--pr-code-block-subst-text);
 
   --pr-code-block-selector-tag-text:                      hsl(calc(var(--usp-hue) + 120deg), 100%,  30%);
   --pr-code-block-tag-text:                               var(--pr-code-block-selector-tag-text);
- 
+
   /* PRINT STICKY NOTES ===================================================================== */
   --pr-sticky-notes-text:                                 var(--pr-text);
   --pr-sticky-notes-bdc:                                  hsl(var(--usp-hue), 100%,  70%);
@@ -1382,7 +1382,7 @@ ag12::-webkit-scrollbar-thumb:hover {
 /* h1 > span ----------------------------------------------- */
 #rendered-md h1 > span {
   font-size: inherit;
-  -webkit-background-clip: initial; 
+  -webkit-background-clip: initial;
   background-clip: initial;
   -webkit-text-fill-color: initial;
 }
@@ -1555,7 +1555,7 @@ ag12::-webkit-scrollbar-thumb:hover {
 #rendered-md h1 code:not(pre code),
 #rendered-md h1 .inline-code,
 #rendered-md h1 mark {
-  -webkit-background-clip: initial; 
+  -webkit-background-clip: initial;
   background-clip: initial;
   -webkit-text-fill-color: initial;
 }
@@ -1662,7 +1662,7 @@ ag12::-webkit-scrollbar-thumb:hover {
   height: 25px;
   color: #dddddd !important;
   background: var(--sc-plugin-code-clipboard-btn) !important;
-  border: none !important;  
+  border: none !important;
 }
 /* hover --------------------------------------------------- */
 #rendered-md .mermaid-export-graph:hover {
@@ -1964,12 +1964,12 @@ ag12 {
   margin: 25px 0;
   padding: 20px;
   max-height: var(--usp-art-gallery-max-height);
-  background: var(--sc-art-gallery-bg); 
+  background: var(--sc-art-gallery-bg);
   border-width: 3px 0;
   border-style: solid;
-  border-color: var(--sc-art-gallery-bdc); 
+  border-color: var(--sc-art-gallery-bdc);
   border-radius: 7px;
-  filter: drop-shadow(0 0 var(--sc-art-gallery-ds)); 
+  filter: drop-shadow(0 0 var(--sc-art-gallery-ds));
   overflow: scroll;
 }
 /* image padding ------------------------------------------- */
@@ -2492,7 +2492,7 @@ tspan {
 /* copy button --------------------------------------------- */
 .code-clipboard-button {
   top: 2px !important;
-  right: 35px !important;  
+  right: 35px !important;
   visibility: hidden;
   transform: rotateZ(0deg) scale(0%);
   transition: transform 0.2s, visibility 0.2s;
@@ -2562,16 +2562,16 @@ tspan {
 
 @media print {
 
-  
 
-  
+
+
   /* ------------------------------------------------------- */
   /*                        PRINT FONT                       */
   /* ------------------------------------------------------- */
 
 
 
-  
+
   /* || PRINT FONT 1 | PRINT BASE FONT ********************* */
   body *:not(.katex-display *),
   .spoiler-block .summary-title {
@@ -2582,7 +2582,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT FONT 2 | PRINT MONOSPACE FONT **************** */
   /* monospace font group: | code block | inline code | insert & strikethrough symbol | inline spoiler symbol | footnote ref num | headings ref | list token */
   #rendered-md .hljs *,
@@ -2601,14 +2601,14 @@ tspan {
     font-family: var(--usp-print-monospace-font, monospace);
     font-size: var(--usp-print-monospace-font-size);
   }
-  
+
   /* PRINT MONOSPACE FONT: PRINT SMALLER CODE BLOCK SYNTAX = */
   #rendered-md .joplin-editable > .hljs * {
     font-size: var(--usp-print-smaller-code-block-font-size);
   }
 
 
-  
+
   /* || PRINT FONT 3 | PRINT HEADING FONT ****************** */
   #rendered-md h1,
   #rendered-md h2,
@@ -2639,14 +2639,14 @@ tspan {
 
 
 
-  
+
   /* ------------------------------------------------------- */
   /*                       PRINT READY                       */
   /* ------------------------------------------------------- */
 
 
 
-  
+
   /* || PRINT READY 1 | PRINT EXACT COLOR ****************** */
   #rendered-md *,
   #rendered-md .table-of-contents::before {
@@ -2657,14 +2657,14 @@ tspan {
   }
 
 
-  
+
   /* || PRINT READY 2 | PAGE MARGIN ************************ */
   .exported-note {
     margin: 0;
   }
 
-  
-  
+
+
   /* || PRINT READY 3 | REMOVE BLOCK ELEMENT MAX-HEIGHT **** */
   ag2,
   ag3,
@@ -2682,7 +2682,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT READY 4 | PAGE BREAK ************************* */
   #rendered-md h1,
   #rendered-md h2,
@@ -2713,7 +2713,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT READY 5 | REMOVE BACKGROUND & FILTER ********* */
   /* GROUP: | table | inline code | toc | art gallery | stick notes | custom title block | key mention | spoiler | turntochart | */
   ag2,
@@ -2785,7 +2785,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT READY 7 | DISPLAY ELEMENTS ******************* */
   /* notes title ------------------------------------------- */
   .exported-note-title {
@@ -2856,7 +2856,7 @@ tspan {
 
 
 
-  
+
   /* || PRINT STYLE ADJUSTMENTS 1 | PRINT SPECIAL TEXT ***** */
   /* PRINT SPECIAL TEXT: ABBREVIATION ====================== */
   #rendered-md abbr {
@@ -2867,15 +2867,15 @@ tspan {
     content: "("attr(title)")";
     margin-left: 2px;
   }
-  
+
   /* SPECIAL TEXT: INLINE CODE ============================= */
   #rendered-md code:not(pre code),
   #rendered-md .inline-code {
     border: 2px solid var(--pr-inline-code-symbol);
   }
-  
 
-  
+
+
   /* || PRINT STYLE ADJUSTMENTS 2 | PRINT LINK ************* */
   /* print link href --------------------------------------- */
   #rendered-md a:not([title^="http"]):not([title^="file:"]):not([href^="joplin:"]):not([href^="data:"])::after {
@@ -2923,7 +2923,7 @@ tspan {
   #rendered-md h6 {
     line-height: 1.2em;
   }
-  
+
   /* PRINT HEADINGS: H1 ==================================== */
   #rendered-md h1 {
     color: var(--pr-h1-text);
@@ -2935,7 +2935,7 @@ tspan {
   }
   /* h1 > span --------------------------------------------- */
   #rendered-md h1 > span {
-    -webkit-background-clip: initial; 
+    -webkit-background-clip: initial;
     background-clip: initial;
     -webkit-text-fill-color: initial;
   }
@@ -2993,7 +2993,7 @@ tspan {
     border-radius: 7px;
   }
   #rendered-md .table-of-contents:hover::before{
-    visibility: visible; 
+    visibility: visible;
   }
   #rendered-md .table-of-contents::after {
     content: "";
@@ -3054,7 +3054,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT STYLE ADJUSTMENTS 7 | PRINT STICKY NOTES ***** */
   /* PRINT STICKY NOTES: BODY ============================== */
   #rendered-md note,
@@ -3085,7 +3085,7 @@ tspan {
   #rendered-md .spoiler-block > .summary-content ol > li {
     color: var(--pr-plugin-spoiler-list-text);
   }
-  
+
   /* SPOILER BLOCK: SPAN =================================== */
   /* span title -------------------------------------------- */
   #rendered-md .spoiler-block > .summary-content > p > span:first-child {
@@ -3096,7 +3096,7 @@ tspan {
   #rendered-md .spoiler-block > .summary-content li span {
     color: var(--pr-plugin-spoiler-list-span);
   }
-  
+
   /* SPOILER BLOCK: CUSTOM TITLE BLOCK ===================== */
   /* block ------------------------------------------------- */
   #rendered-md .spoiler-block > .summary-content > p > ctb {
@@ -3107,7 +3107,7 @@ tspan {
   #rendered-md .spoiler-block > .summary-content > p > ctb:first-line {
     color: var(--pr-plugin-spoiler-custom-title-block-title);
   }
-  
+
   /* SPOILER: SPOILER INLINE =============================== */
   /* spoiler inline: body ---------------------------------- */
   #rendered-md label.spoiler-inline {
@@ -3121,14 +3121,14 @@ tspan {
 
 
 
-  
+
   /* ------------------------------------------------------- */
   /*                 PRINT COLOR ADJUSTMENTS                 */
   /* ------------------------------------------------------- */
-  
-  
-  
-  
+
+
+
+
   /* || PRINT COLOR ADJUSTMENTS 1 | PRINT PARAGRAPH ******** */
   /* PARAGRAPH: PARAGRAPH TEXT ============================= */
   #rendered-md > p {
@@ -3141,24 +3141,24 @@ tspan {
   }
 
 
-  
+
   /* || PRINT COLOR ADJUSTMENTS 2 | PRINT SPECIAL TEXT ***** */
   /* SPECIAL TEXT: EMPHASIZE =============================== */
   #rendered-md em {
     color: var(--pr-emphasize-text);
   }
-  
+
   /* SPECIAL TEXT: STRONG ================================== */
   #rendered-md strong {
     color: var(--pr-strong-text);
   }
-  
+
   /* SPECIAL TEXT: MARK ==================================== */
   #rendered-md mark {
     color: var(--pr-mark-text);
     background: var(--pr-mark-bg);
   }
-  
+
   /* SPECIAL TEXT: INSERT & STRIKETHROUGH ================== */
   /* insert ------------------------------------------------ */
   #rendered-md ins {
@@ -3208,9 +3208,9 @@ tspan {
   #rendered-md a > .resource-icon {
     background: var(--pr-link-source-icon);
   }
-  
-  
-  
+
+
+
   /* || PRINT COLOR ADJUSTMENTS 4 | PRINT LIST ************* */
   #rendered-md ul li,
   #rendered-md ul li > p,
@@ -3227,15 +3227,15 @@ tspan {
   #rendered-md li > span {
     color: var(--pr-list-span);
   }
-  
-  
-  
+
+
+
   /* || PRINT COLOR ADJUSTMENTS 5 | PRINT FOOTNOTE ********* */
   /* FOOTNOTE REFERENCE ==================================== */
   #rendered-md [id*="fnref"] {
     color: var(--pr-footnote-ref);
   }
-  
+
   /* FOOTNOTE ============================================== */
   /* footnote separate title ------------------------------- */
   #rendered-md .footnotes::before {
@@ -3254,8 +3254,8 @@ tspan {
   #rendered-md .footnote-item {
     color: var(--pr-footnote-list-token);
   }
-  
-  
+
+
 
   /* || PRINT COLOR ADJUSTMENTS 6 | PRINT HEADINGS ********* */
   /* heading reference ------------------------------------- */
@@ -3268,7 +3268,7 @@ tspan {
   #rendered-md h6:before {
     -webkit-text-fill-color: var(--pr-heading-ref);
   }
-  
+
   /* H1 ==================================================== */
   #rendered-md h1 {
     color: var(--pr-h1-text);
@@ -3277,7 +3277,7 @@ tspan {
   #rendered-md h1::after {
     background-image: var(--pr-h1-bgi);
   }
-  
+
   /* H2 ==================================================== */
   #rendered-md h2 {
     color: var(--pr-h2-text);
@@ -3286,7 +3286,7 @@ tspan {
   #rendered-md h2::after {
     background-image: var(--pr-h2-bgi);
   }
-  
+
   /* H3 ==================================================== */
   #rendered-md h3 {
     color: var(--pr-h3-text);
@@ -3295,7 +3295,7 @@ tspan {
   #rendered-md h3::after {
     background-image: var(--pr-h3-bgi);
   }
-  
+
   /* H4 ==================================================== */
   #rendered-md h4 {
     color: var(--pr-h4-text);
@@ -3304,7 +3304,7 @@ tspan {
   #rendered-md h4::after {
     background-image: var(--pr-h4-bgi);
   }
-  
+
   /* H5 ==================================================== */
   #rendered-md h5 {
     color: var(--pr-h5-text);
@@ -3313,7 +3313,7 @@ tspan {
   #rendered-md h5::after {
     background-image: var(--pr-h5-bgi);
   }
-  
+
   /* H6 ==================================================== */
   #rendered-md h6 {
     color: var(--pr-h6-text);
@@ -3322,7 +3322,7 @@ tspan {
   #rendered-md h6::after {
     background-image: var(--pr-h6-bgi);
   }
-  
+
   /* HEADINGS: MANUAL BORDER =============================== */
   /* h2 + horizontal rule ---------------------------------- */
   #rendered-md h2 + hr {
@@ -3355,9 +3355,9 @@ tspan {
   #rendered-md .katex * {
     color: var(--pr-math-notation-text);
   }
-  
-  
-  
+
+
+
   /* || PRINT COLOR ADJUSTMENTS 8 | PRINT BLOCKQUOTE ******* */
   #rendered-md blockquote {
     border-left: var(--pr-blockquote-bdl);
@@ -3365,9 +3365,9 @@ tspan {
   #rendered-md blockquote > p {
     color: var(--pr-blockquote-text);
   }
-  
-  
-  
+
+
+
   /* || PRINT COLOR ADJUSTMENTS 9 | PRINT TABLE ************ */
   #rendered-md table > thead > tr > th,
   #rendered-md table > tbody > tr > td {
@@ -3383,8 +3383,8 @@ tspan {
   #rendered-md table > tbody > tr:nth-child(even) {
     background: var(--pr-table-row-even-bg);
   }
-  
-  
+
+
 
   /* || PRINT COLOR ADJUSTMENTS 10 | PRINT MARKDOWN TOC **** */
   /* print toc button = toc title -------------------------- */
@@ -3398,13 +3398,13 @@ tspan {
   }
 
 
-  
+
   /* || PRINT COLOR ADJUSTMENTS 11 | PRINT CODE BLOCK ****** */
   /* CODE BLOCK: BODY ====================================== */
   #rendered-md .joplin-editable > .hljs {
     border-color: var(--pr-code-block-bdc);
   }
-  
+
   /* CODE BLOCK: SYNTAX HIGHLIGHT ========================== */
   #rendered-md .hljs * {
     color: var(--pr-code-block-text);
@@ -3514,7 +3514,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT COLOR ADJUSTMENTS 12 | PRINT STICKY NOTES **** */
   /* PRINT STICKY NOTES: BODY ============================== */
   #rendered-md note,
@@ -3529,7 +3529,7 @@ tspan {
     border-color: var(--pr-sticky-notes-bdc);
     box-shadow: 0 0 var(--pr-sticky-notes-bs) !important;
   }
-  
+
   /* PRINT STICKY NOTES: TAGS ============================== */
   /* without "important" ----------------------------------- */
   #rendered-md note::after,
@@ -3541,7 +3541,7 @@ tspan {
   #rendered-md comment::after {
     color: var(--pr-sticky-notes-tag-text);
   }
-  
+
   /* PRINT STICKY NOTES: IMPORTANT ========================= */
   #rendered-md important {
     color: var(--pr-sticky-notes-important-text);
@@ -3551,9 +3551,9 @@ tspan {
   #rendered-md important::before {
     border-color: var(--pr-sticky-notes-important-tag-bdc);
   }
-  
 
-  
+
+
   /* || PRINT COLOR ADJUSTMENTS 13 | PRINT CUSTOM TITLE BLOCK */
   #rendered-md > p > ctb {
     border: var(--pr-custom-title-block-bd);
@@ -3568,7 +3568,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT COLOR ADJUSTMENTS 14 | PRINT KEY POINT ******* */
   #rendered-md kp {
     color: var(--pr-key-point-text);
@@ -3580,7 +3580,7 @@ tspan {
   }
 
 
-  
+
   /* || PRINT COLOR ADJUSTMENTS 15 | PRINT KEY MENTION ***** */
   #rendered-md km {
     color: var(--pr-key-mention-text);
@@ -3592,7 +3592,7 @@ tspan {
     text-decoration: none;
   }
 
-  
+
 
   /* || PRINT COLOR ADJUSTMENTS 16 | PRINT TURNTOCHART(TTC)  */
   /* PRINT TTC: CHART ====================================== */
@@ -3602,7 +3602,7 @@ tspan {
     fill: var(--pr-plugin-turntochart-text);
     color: var(--pr-plugin-turntochart-text);
   }
-  
+
   /* PRINT TTC: INFO BLOCK ================================= */
   /* background -------------------------------------------- */
   #rendered-md > div > svg ~ div {
