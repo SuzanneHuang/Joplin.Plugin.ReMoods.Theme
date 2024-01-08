@@ -2240,53 +2240,53 @@ body {
 /* HEADER: BUTTON ========================================== */
 /* GROUP: | new note | new todo | sort field | sort order | */
 /* button container ---------------------------------------- */
-.rli-noteList .search-bar ~ div {
-  max-width: 0;
-  transition: max-width 1s;
-  transition-delay: 1.2s;
-}
+/* .rli-noteList .search-bar ~ div { */
+/*   max-width: 0; */
+/*   transition: max-width 1s; */
+/*   transition-delay: 1.2s; */
+/* } */
 /* header hover > button container (Joplin v2.10.4) -------- */
-.rli-noteList > div > div > div[height="50"]:hover .search-bar ~ div {
-  max-width: 100%;
-  transition: max-width 0.5s;
-}
+/* .rli-noteList > div > div > div[height="50"]:hover .search-bar ~ div { */
+/*   max-width: 100%; */
+/*   transition: max-width 0.5s; */
+/* } */
 /* button -------------------------------------------------- */
-.rli-noteList .search-bar ~ div button {
-  margin: 0 3px;
-  max-width: 26px;
-  min-width: 26px;
-  max-height: 26px;
-  min-height: 26px;
-  background: var(--g-square-btn-bg-1);
-  border: 0px solid var(--g-square-btn-bd-1);
-  border-radius: 0px;
-  transition: background 0.8s, border 0.8s, border-radius 0.8s;
-}
+/* .rli-noteList .search-bar ~ div button { */
+/*   margin: 0 3px; */
+/*   max-width: 26px; */
+/*   min-width: 26px; */
+/*   max-height: 26px; */
+/*   min-height: 26px; */
+/*   background: var(--g-square-btn-bg-1); */
+/*   border: 0px solid var(--g-square-btn-bd-1); */
+/*   border-radius: 0px; */
+/*   transition: background 0.8s, border 0.8s, border-radius 0.8s; */
+/* } */
 /* button hover -------------------------------------------- */
-.rli-noteList .search-bar ~ div button:hover {
-  background: var(--g-square-btn-bg-1-hover);
-  border: 2px solid var(--g-square-btn-bd-1-hover);
-  border-radius: 7px;
-  transition: background, 0.3s, border 0.1s, border-radius 0.3s;
-}
+/* .rli-noteList .search-bar ~ div button:hover { */
+/*   background: var(--g-square-btn-bg-1-hover); */
+/*   border: 2px solid var(--g-square-btn-bd-1-hover); */
+/*   border-radius: 7px; */
+/*   transition: background, 0.3s, border 0.1s, border-radius 0.3s; */
+/* } */
 /* button icon --------------------------------------------- */
-.rli-noteList .search-bar ~ div span {
-  color: var(--g-square-btn-icon-1) !important;
-  font-size: 16px;
-  transition: color 0.3s;
-}
+/* .rli-noteList .search-bar ~ div span { */
+/*   color: var(--g-square-btn-icon-1) !important; */
+/*   font-size: 16px; */
+/*   transition: color 0.3s; */
+/* } */
 /* new todo button icon ------------------------------------ */
-.rli-noteList .new-todo-button > span {
-  font-size: 17px !important;
-}
+/* .rli-noteList .new-todo-button > span { */
+/*   font-size: 17px !important; */
+/* } */
 /* new note button icon ------------------------------------ */
-.rli-noteList .new-note-button > span {
-  font-size: 20px !important;
-}
+/* .rli-noteList .new-note-button > span { */
+/*   font-size: 20px !important; */
+/* } */
 /* button hover > icon ------------------------------------- */
-.rli-noteList .search-bar ~ div button:hover > span {
-  color: var(--g-square-btn-icon-1-hover) !important;
-}
+/* .rli-noteList .search-bar ~ div button:hover > span { */
+/*   color: var(--g-square-btn-icon-1-hover) !important; */
+/* } */
 
 
 
