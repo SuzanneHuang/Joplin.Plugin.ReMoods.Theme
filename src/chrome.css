@@ -1647,13 +1647,13 @@ body {
 
 /* || NOTEBOOK PANEL 2 | HEADER **************************** */
 /* HEADER: CONTAINER ======================================= */
-.sidebar > div:first-child > div:first-child {
+.sidebar-header-container {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  margin-bottom: 4px;
-  min-height: 35px;
-  max-height: 35px;
+  /* top: 0; */
+  /* margin-bottom: 4px; */
+  /* min-height: 35px; */
+  /* max-height: 35px; */
   background: var(--g-panel-header-bgc);
   border-radius: 3px;
   z-index: 2;
@@ -1661,47 +1661,47 @@ body {
 
 /* HEADER: CONTENT ========================================= */
 /* content container --------------------------------------- */
-.sidebar > div:first-child > div:first-child > div {
-  padding: 0;
-  margin: 0;
-  max-height: 35px;
+.sidebar-header-container > div {
+  /* padding: 0; */
+  /* margin: 0; */
+  /* max-height: 35px; */
 }
 /* GROUP: | text | plus button | --------------------------- */
-.sidebar > div:first-child > div:first-child > div > span,
-.sidebar > div:first-child > div:first-child > button > span {
+.sidebar-header-container > div > span,
+.sidebar-header-container > button > span {
   color: var(--g-panel-header-text);
   text-shadow: 0 0 var(--g-panel-header-ts);
   cursor: pointer;
 }
 /* text ---------------------------------------------------- */
-.sidebar > div:first-child > div:first-child > div > span {
-  margin-left: 15px;
-  line-height: 35px;
+.sidebar-header-container > div > span {
+  /* margin-left: 15px; */
+  /* line-height: 35px; */
 }
 /* icon ---------------------------------------------------- */
-.sidebar > div:first-child > div:first-child > div > i {
+.sidebar-header-container > div > i {
   display: none;
 }
 /* plus button --------------------------------------------- */
-.sidebar > div:first-child > div:first-child > button {
-  position: absolute;
-  left: 100px;
-  padding: 0;
+.sidebar-header-container > button {
+  /* position: absolute; */
+  /* left: 100px; */
+  /* padding: 0; */
 }
 /* plus button icon ---------------------------------------- */
-.sidebar > div:first-child > div:first-child > button > span {
+.sidebar-header-container > button > span {
   font-size: 12px;
 }
-.sidebar > div:first-child > div:first-child > button > span:before {
+.sidebar-header-container > button > span:before {
   content: "\f518";
 }
 /* plus button hover > icon -------------------------------- */
-.sidebar > div:first-child > div:first-child > button:hover > span:before {
+.sidebar-header-container > button:hover > span:before {
   content: "\2b";
   font-size: 16px;
 }
 /* plus button hover > icon -------------------------------- */
-.sidebar > div:first-child > div:first-child > button:hover > span {
+.sidebar-header-container > button:hover > span {
   transform: rotate(1turn);
   transition: transform 0.3s;
 }
