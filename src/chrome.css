@@ -1880,6 +1880,13 @@ body {
   padding-left: 158px;
   animation: fade-d15 0.8s;
 }
+
+
+/* notebook trash icon*/
+.fa-trash {
+  color: #007bff
+}
+
 /* notebook title ------------------------------------------ */
 .sidebar .list-item-container > .list-item > .title {
   display: block;
